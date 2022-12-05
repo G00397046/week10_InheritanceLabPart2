@@ -16,7 +16,7 @@ public class Display {
 
         PreferredCustomer Mike = new PreferredCustomer("Mike","815-858-2131","214 Rock Hill Rd","23456",true,2555);
 
-        System.out.println("\nCustomer Name: " + Mike.getName() + "\nCustomer Address: " + Mike.getAddress() + "\nCustomer Phone Number: " + Mike.getNumber() + "\nCustomer Employee Number: " + Mike.getCustomerNumber() + "\nOn Mailing List: " + Mike.isInMailingList() + "\nCustomer Total Spend: " + Mike.getAmountPurchased() + "\nPreferred Customer Discount: " + Mike.getDiscount() + "\nTotal With Discount: " + (Mike.getAmountPurchased() - Mike.getDiscount()));
+        System.out.println("\nCustomer Name: " + Mike.getName() + "\nCustomer Address: " + Mike.getAddress() + "\nCustomer Phone Number: " + Mike.getNumber() + "\nCustomer Employee Number: " + Mike.getCustomerNumber() + "\nOn Mailing List: " + Mike.isInMailingList() + "\nCustomer Total Spend: $" + Mike.getAmountPurchased() + "\nPreferred Customer Discount: $" + Mike.getDiscount() + "\nTotal With Discount: $" + (Mike.getAmountPurchased() - Mike.getDiscount()));
 
 
 
