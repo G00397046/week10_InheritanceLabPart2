@@ -5,8 +5,8 @@ public class Customer extends Person {
     private boolean isInMailingList;
 
     public Customer(){}
-    public Customer(String name, String number, String address){
-        super(name,number,address);
+    public Customer(String name, String number, String address,String customerNumber,boolean isInMailingList){
+        super(name,number,address); //Invoking Super Class
         this.customerNumber = customerNumber;
         this.isInMailingList = isInMailingList;
     }
@@ -25,5 +25,9 @@ public class Customer extends Person {
 
     public void setInMailingList(boolean inMailingList) {
         isInMailingList = inMailingList;
+    }
+    @Override
+    public String toString(){
+        return super.toString() + "Customer Number: " + customerNumber + "\nMailing List: " + isInMailingList;
     }
 }

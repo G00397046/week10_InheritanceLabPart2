@@ -36,4 +36,11 @@ public class Person {
     public void setAddress(String address) {
         this.address = address;
     }
+
+    @Override
+    public String toString() {
+        return "\nCustomer Name: " + name +
+                "\nCustomer Address: " + address +
+                "\nCustomer Phone Number: " + number + "\n";
+    }
 }
